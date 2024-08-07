@@ -41,7 +41,7 @@ h1 {
 }
 
 .search {
-  width: 71%;
+  width: 100%;
   margin: 4rem 0 2rem;
 
   display: flex;
@@ -229,4 +229,51 @@ h1 {
     width: "100%";
     margin: 1rem;
   }
+}
+
+/* Add this below your existing CSS */
+
+.notification-inbox {
+  position: absolute;
+  top: 10%;
+  left: 63%;
+  z-index: 1;
+  width: 20%;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #1f2123;
+  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+}
+
+.notification-inbox h2 {
+  font-size: 1.5rem;
+  color: #f9d3b4;
+  font-family: var(--font-raleway);
+  margin-bottom: 1rem;
+}
+
+.notification-inbox ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notification-inbox li {
+  background-color: #2c2f31;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: #f1f1f1;
+  font-family: var(--font-raleway);
+  font-size: 1rem;
+}
+
+.notification-inbox li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
 }
